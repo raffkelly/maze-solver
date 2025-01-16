@@ -103,7 +103,7 @@ class Maze:
                 for j in range(self._num_rows):
                     self._cells[i][j].visited = False
     
-    def _solve_dfs(self):
+    def solve_dfs(self):
         return self._solve_r_dfs(0, 0)
     
     def _solve_r_dfs(self, i, j):
